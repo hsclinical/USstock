@@ -1,0 +1,31 @@
+*** BACKGROUND ***
+Q1: What's ARK (https://ark-funds.com/)?
+ARK is a group of active ETFs, which include G1 (Actively Managed Innovation ETFs: ARKK, ARKQ,
+ARKW, ARKG, and ARKF); and G2 (Indexed Innovation ETFs: PRNT and IZRL)
+ARKK: ARK Innovation ETF
+ARKQ: Autonomous Technology & Robotics ETF*
+ARKW: Next Generation Internet ETF*
+ARKG: Genomic Revolution ETF
+ARKF: Fintech Innovation ETF
+PRNT: The 3D Printing ETF
+IZRL: Israel Innovative Technology ETF
+
+
+Q2: Why to track ARK?
+Based on the comparison from ETF DATABASE (https://etfdb.com/compare/)
+Let's check "100 Highest 5 Year ETF Returns" (https://etfdb.com/compare/highest-5-year-returns/)
+ARKW ranked #5 (865.71%), ARKK ranked #7 (755.49%), and ARKG ranked #9 (568.00%)
+The top four ETFs are SOXL, TECL, TQQQ, USD which all use 3x margin and mean high risk.
+
+
+*** PROCESS ***
+Q3: How to track ARK?
+In each ETF page, there is a PDF link. Let's take ARKW (https://ark-funds.com/arkw) as an example.
+The PDF link is https://ark-funds.com/wp-content/fundsiteliterature/holdings/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.pdf
+It contains all company names, amount of shares, and weights on that day. Let's perform the following process:
+1. In Python, use wget or curl to download daily PDF for all seven ETFs, name and store them using
+   EFT name plus date information
+2. If there is any exception during download, send email to my Gmail account
+3. Use cron job to execute the Python commander at 8PM (PST) every day. (may adjust based on when PDF is available)
+4. After 3 to 6 months, use Python script to retrieve table content in PDF file.
+5. Check share changes, find potiential result, and guide my stock selection (when to buy and when to sale)
