@@ -24,7 +24,7 @@ In each ETF page, there is a PDF link. Let's take ARKW (https://ark-funds.com/ar
 The PDF link is https://ark-funds.com/wp-content/fundsiteliterature/holdings/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.pdf
 It contains all company names, amount of shares, and weights on that day. Let's perform the following process:
 1. In Python, use wget or curl to download daily PDF for all seven ETFs, name and store them using
-   EFT name plus date information
+   ETF name plus date information
 2. If there is any exception during download, send email to my Gmail account
 3. Use cron job to execute the Python commander at 8PM (PST) every day. (may adjust based on when PDF is available)
 4. After 3 to 6 months, use Python script to retrieve table content in PDF file.

@@ -1,0 +1,10 @@
+*** LOGIC ***
+1. From nasdaq website, get a list of all stocks and etfs including the latest price, market cap, category, sub-category
+2. Filter the list based on the latest price, market cap, category, sub-category with the following conditions
+    a. the latest price > $10.00
+    b. market cap > ???X
+    c. It's the top two company in its sub-category or its  market cap > ???Y
+3. Given the remaining stocks and etfs in the list, download its daily price within the last 10 years and calculate
+    a. growability
+    b. stability
+    c. timing
